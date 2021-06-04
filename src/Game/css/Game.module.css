@@ -1,0 +1,16 @@
+.cards-container {
+  margin: 30px;
+}
+
+.buttons {
+  margin: 20px
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid #0008;
+}
+
+.oko-buttons {
+  display: none;
+}

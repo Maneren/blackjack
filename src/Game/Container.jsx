@@ -17,13 +17,14 @@ class Container extends Component {
     };
   }
 
-  changePage () {
-
+  changePage (index) {
+    this.setState({ activePageIndex: index });
   }
 
   render () {
-    const Current = this.pages[this.state.activePageIndex];
-    return (<Current gameIndex={this.state.gameIndex} changePageHandle={this.changePage.bind(this)} />);
+    const { activePageIndex, gameIndex } = this.state;
+    const Current = this.pages[activePageIndex];
+    return (<Current gameIndex={gameIndex} changePageHandle={this.changePage.bind(this)} />);
   }
 }
 
